@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curriculum Vitae</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" type="image/png" href="Imagenes/Icono.png">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/c16b847adc.js" crossorigin="anonymous"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="logo">
+                    <img src="Imagenes/arg_programa_logo.png" alt="arg_programa_logo">
+                    <span class="nav-item">Arg Programa</span>
+                </a></li>
+            <li><a href="#about_me"><i class="fa-solid fa-house-user"></i> <span class="nav-item"> Acerca De Mi </span></a></li>
+            <li><a href="#datos"><i class="fa-solid fa-person"></i> <span class="nav-item"> Datos Personales </span></a></li>
+            <li><a href="#experiencia"><i class="fa-solid fa-briefcase"></i> <span class="nav-item"> Experiencia</span></a></li>
+            <li><a href="#habilidades"><i class="fa-solid fa-shield"></i> <span class="nav-item"> Habilidades</span></a></li>
+        </ul>
+    </nav>
+    <div id="contendor_page">
+        <div class="acerca_de">
+            <h1 id="titulo_principal">Mateo Ramallo</h1>
+            <img src="Imagenes/Imagen_Mia.jpg" alt="foto_mia" id="mi_foto">
+            <h2>Programador Back-End</h2>
+            <p id="about_me">
+                Soy un desarrollador Back-End, en constante aprendizaje para ser full stack. Tengo una gran pasión por la Inteligencia Artificial, y los potenciales de la misma para automatizar diversas tareas cotidianas. <br>
+                Secundario completo en el Colegio Jesús María, Córdoba, Argentina. <br>
+                <strong>Estudiante De Ingeniería en Sistemas en la Universidad Tecnológica Nacional Facultad Regional De Córdoba. </strong><br>
+                <br>
+                Desde 2019 interesado en la tecnología, y desarrollo de software, ejerciendo independientemente de técnico en instalación y reparación de equipos de cómputo, y mantenimiento de los mismos. Realizando a la par proyectos de desarrollo de software simples, aplicaciones con Java, y Python.
+            </p>
+        </div>
+        
+        <h2 class="titulo_sec" id="datos">Datos Personales</h2>
+        <div class="contenedor_datos">
+            <div class="datos_personales_lista">
+                <ul>
+                    <li><i class="fa-sharp fa-solid fa-person specials_icons"></i> Nombre: Ramallo Mateo</li>
+                    <li><i class="fa-solid fa-calendar-days specials_icons"></i>Edad: 19 Años</li>
+                    <li><i class="fa-solid fa-phone specials_icons"></i>Telefono: 3515640277</li>
+                    <li><i class="fa-brands fa-github"></i>GitHub: mmateoramallo</li>
+                    <li><i class="fa-brands fa-instagram"></i> Instagram: @mateoramallo_</li>
+                    <li><i class="fa-brands fa-linkedin"></i>Linkedin: Mateo Ramallo</li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="titulo_sec">Experiencia</h2>
+        <div class="experiencia_datos">
+            <div class="contendor_texto_izq">
+                <p id="experiencia">
+                    Desde 2019 interesado en la tecnología, y desarrollo de software, ejerciendo independientemente de técnico en instalación y reparación de equipos de cómputo, y mantenimiento de los mismos. Y realizando proyectos de desarrollo de software simples, aplicaciones con Java, y Python. <br>
+                    Actualmente trabajando en proyectos de Machine Learning, para analizar datos provenientes de archivos JSON con JQ, ejerciendo hace menos de un año, en diversas tareas para aportar al proyecto.
+                </p>
+            </div>
+            <div class="contenedor_propyectos_der">
+                <ul>
+                    <li>Asistente Virtual <i class="fa-solid fa-brain specials_icons"></i> </li>
+                    <li>Calculadora <i class="fa-solid fa-calculator specials_icons"></i></li>
+                    <li>ML para analizar JSON <i class="fa-brands fa-js specials_icons"></i></li>
+                    <li>App de clima <i class="fa-solid fa-cloud specials_icons"></i></li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="titulo_sec">Probá la app del Clima!</h2>
+        <div class="prueba_proyectos">
+            <div class="app_clima">
+
+                <div class="botones">
+                    <input type="button" value="Abrir App" id="btn_activar_app" onclick="mostrar();"> 
+                    <input type="button" value="Cerra App" id="btn_cerrar_app" onclick="ocultar();"> 
+                </div>
+
+                <div class="contenedor_paneles" id="contenedor">
+                    <div id="caja1">
+                        <h1 id="temperatura-valor"></h1>
+                        <h1 id="temperatura-descripcion"></h1>
+                    </div>
+                    <div id="caja2">
+                        <h2 id="ubicacion"></h2>
+                        <img src="" alt="" id="icono-animado">
+                    </div>
+                    <div id="caja3">
+                        <h2 class="vel_vi">Velocidad Del Viento</h2>
+                        <h1 id="viento-velocidad"></h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <h2 class="titulo_sec">Habilidades</h2>
+        <div class="habilidades">
+            <div class="contenedor_habilidades">
+                <ul id="habilidades">
+                    <li><i class="fa-brands fa-python"></i><a href="https://www.python.org/" target="_blank"> Python</a></li>
+                    <li><i class="fa-brands fa-java"></i><a href="https://www.java.com/es/" target="_blank"> Java </a></li>
+                    <li><i class="fa-brands fa-js"></i><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"> JavaScript</a></li>
+                    <li><i class="fa-brands fa-html5"></i><a href="https://www.w3schools.com/html/default.asp" target="_blank">Maquetado Web, con HTML y CSS </a><i class="fa-brands fa-css3-alt"></i></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

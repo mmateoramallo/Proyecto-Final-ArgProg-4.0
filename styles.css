@@ -200,7 +200,7 @@ nav:hover ~ #contendor_page{
     border-radius: 4px;
     width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
     margin-left: 50%;
-    transform: translateX(-350%);
+    transform: translateX(-120%);
 
 }
 #btn_cerrar_app:hover{
@@ -219,13 +219,16 @@ nav:hover ~ #contendor_page{
     border: none;
     border-radius: 4px;
     width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
-    
+    transform: translateX(390%);
 }
 #btn_activar_app:hover{
     cursor: pointer;
     background: #1e1d25;
 }
-
+.botones{
+    display: flex table-cell;
+    column-count: 2;
+}
 .mostrar_paneles{
     opacity: 1;
 }
